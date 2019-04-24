@@ -1,0 +1,24 @@
+{
+"manifest_version": 2,
+"name": "Practice",
+"version": "1",
+"content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+"background": {
+    "scripts": ["background.js"]
+  },
+"permissions": [
+  "alarms"
+],
+"browser_action": {
+    "default_icon": "example.png",
+    "default_popup": "popup.html",
+    "default_title": "Title"
+  }
+}
